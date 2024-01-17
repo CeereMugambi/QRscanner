@@ -4,6 +4,7 @@ import { RegisterComponent } from './register/register.component';
 import { AccountRoutingModule } from './account-routing.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MaterialModule } from '../material/material.module';
+import { ComponentsModule } from '../components/components.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { MaterialModule } from '../material/material.module';
     FormsModule,
     MaterialModule,
     ReactiveFormsModule,
-    AccountRoutingModule
+    AccountRoutingModule,
+    ComponentsModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

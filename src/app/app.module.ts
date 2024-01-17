@@ -10,14 +10,13 @@ import { WelcomeRoutingModule } from './welcome/welcome-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CommonModule } from '@angular/common';
 import { MaterialModule } from './material/material.module';
-import { ComponentsComponent } from './card/components/components.component';
+import { ComponentsModule } from './components/components.module';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     WelcomeComponent,
-    ComponentsComponent
   ],
   imports: [
     CommonModule,
@@ -31,6 +30,7 @@ import { ComponentsComponent } from './card/components/components.component';
     AppRoutingModule,
     HttpClientModule,
     WelcomeRoutingModule,
+    ComponentsModule,
     BrowserAnimationsModule
   ],
   providers: [],
