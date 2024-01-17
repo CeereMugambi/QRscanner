@@ -5,12 +5,12 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
-import { AccountModule } from './account/account.module';
 import { WelcomeRoutingModule } from './welcome/welcome-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CommonModule } from '@angular/common';
 import { MaterialModule } from './material/material.module';
 import { ComponentsModule } from './components/components.module';
+import { HomeModule } from './home/home.module';
 
 
 @NgModule({
@@ -23,11 +23,10 @@ import { ComponentsModule } from './components/components.module';
     BrowserModule,
     FormsModule,
     MaterialModule,
+    HomeModule,
     ReactiveFormsModule,
     AppRoutingModule,
     HttpClientModule,
-    AccountModule,
-    AppRoutingModule,
     HttpClientModule,
     WelcomeRoutingModule,
     ComponentsModule,

@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-const AccountModule = () => import('./account/account.module').then(x => x.AccountModule);
+const HomeModule = () => import('./home/home.module').then(x => x.HomeModule);
 
 
 const routes: Routes = [
-  {path:'account',loadChildren:AccountModule},
+  {path:'home',loadChildren:HomeModule,},
   { path: '', redirectTo: 'welcome', pathMatch: 'full' },
   { path: '**', redirectTo: 'Welcome' },
 ];

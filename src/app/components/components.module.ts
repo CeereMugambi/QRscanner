@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { CardComponent } from './card/card.component';
 import { ComponentsRoutingModule } from './components-routing.module';
 import { SubnavbarComponent } from './subnavbar/subnavbar.component';
+import { MaterialModule } from '../material/material.module';
 
 
 
@@ -13,10 +14,12 @@ import { SubnavbarComponent } from './subnavbar/subnavbar.component';
   ],
   imports: [
     CommonModule,
-    ComponentsRoutingModule
+    ComponentsRoutingModule,
+    MaterialModule
   ],
   exports:[
-    CardComponent
+    CardComponent,
+    SubnavbarComponent
   ]
 })
 export class ComponentsModule { }
