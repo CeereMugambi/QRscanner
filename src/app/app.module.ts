@@ -27,7 +27,6 @@ import { HomeModule } from './home/home.module';
     ReactiveFormsModule,
     AppRoutingModule,
     HttpClientModule,
-    HttpClientModule,
     WelcomeRoutingModule,
     ComponentsModule,
     BrowserAnimationsModule
