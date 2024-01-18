@@ -1,23 +1,28 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HomepageComponent } from './homepage/homepage.component';
 import { HomeRoutingModule } from './home-routing.module';
 import { MaterialModule } from '../material/material.module';
 import { ComponentsModule } from '../components/components.module';
 import { GeneratorComponent } from './generator/generator.component';
+import { QRCodeModule } from 'angularx-qrcode';
+import { ScannerComponent } from './scanner/scanner.component';
+
+
 
 
 
 @NgModule({
   declarations: [
-    HomepageComponent,
     GeneratorComponent,
+    ScannerComponent,
   ],
   imports: [
     CommonModule,
     HomeRoutingModule,
     MaterialModule,
-    ComponentsModule
+    ComponentsModule,
+    QRCodeModule
+
   ]
 })
 export class HomeModule { }

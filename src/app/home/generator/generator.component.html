@@ -1,1 +1,34 @@
-<p>generator works!</p>
+<mat-toolbar class="toolbar-header">
+<mat-icon>qr_code_2</mat-icon>
+    qr-generator
+</mat-toolbar>
+
+<app-subnavbar></app-subnavbar>
+
+  <div id="wrapper">
+    <div id="flexContainer">
+      <div id="result-container">
+        <mat-card>
+          <mat-card-title class="cardtitle">QR Code Preview</mat-card-title>
+          <mat-card-content>
+            <div class="qrcodeImage">
+            <qrcode
+            [qrdata]="'http://localhost:4200/generator'"
+            [allowEmptyString]="true"
+            [ariaLabel]="'QR Code image with the following content...'"
+            [cssClass]="'center'"
+            [colorDark]="'#000000ff'"
+            [colorLight]="'#ffffffff'"
+            [imageHeight]="75"
+            [imageWidth]="75"
+            [margin]="4"
+            [scale]="1"
+            [title]="'scan me'"
+            [width]="300",
+          ></qrcode>
+        </div>
+      </mat-card-content>
+      </mat-card>
+      </div>
+      </div>
+    </div>

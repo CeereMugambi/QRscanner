@@ -11,6 +11,8 @@ import { CommonModule } from '@angular/common';
 import { MaterialModule } from './material/material.module';
 import { ComponentsModule } from './components/components.module';
 import { HomeModule } from './home/home.module';
+import { QRCodeModule } from 'angularx-qrcode';
+
 
 
 @NgModule({
@@ -29,7 +31,9 @@ import { HomeModule } from './home/home.module';
     HttpClientModule,
     WelcomeRoutingModule,
     ComponentsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    QRCodeModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent],

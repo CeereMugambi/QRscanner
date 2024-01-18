@@ -1,13 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomepageComponent } from './homepage/homepage.component';
 import { GeneratorComponent } from './generator/generator.component';
+import { ScannerComponent } from './scanner/scanner.component';
 
 
 
 const routes: Routes = [
-    {path: 'home',component:HomepageComponent},
     {path: 'generator',component:GeneratorComponent},
+    {path: 'scanner',component:ScannerComponent},
+
+
 
 
 ];
