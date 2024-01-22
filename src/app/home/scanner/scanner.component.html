@@ -4,5 +4,32 @@
     document Scanner
   </mat-toolbar>
 
+  <app-subnavbar></app-subnavbar>
+  <app-card>
+    <div class="card">
+      <h1 class="header">Document Upload</h1>
+      <div class="sub-text">
+        <h4>Upload supporting documents in PDF or Jpeg format. The maximum file size per document should not exceed 1mb.</h4>
+      </div>
+    </div>
+  
+    <div class="cards-container">
+    <div class="upload-card">
+    <mat-icon class="card-icon">perm_media</mat-icon>
+    <p class="text">Upload your documents</p>
+    <p class="text instruction">Drag & drop or browse file here</p>
+    </div>
+  
+    <div class="scan-document">
+      <a (click)="onScanButtonClick()">
+      <img class="scan-icon"src="/assets/scan.png">
+      <p class="text instruction">Scan document</p></a>
+      </div>
+    </div>
+
+    <div class="browse-file">
+  <input type="file" (change)="onFileSelected($event)" />
+</div>
+</app-card>
 
   

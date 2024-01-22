@@ -1,0 +1,58 @@
+.card {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .header {
+    color: #db3434;
+  }
+
+  .cards-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  
+.upload-card ,
+.scan-document{
+    width: 200px; 
+    height:200px;
+    margin-top: 10px;
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .upload-card {
+    background-color: #f0f0f0; 
+  }
+  
+
+  .scan-document {
+    background-color: transparent;
+    margin-left: -170px;
+    transform: translateX(-170px);
+  }
+
+.card-icon {
+    height:50px;
+  }
+
+.text{
+    margin: 0;
+}
+
+.browse-file{
+    margin-top:10px;
+}
+
+.scan-icon{
+    max-width: 60%;
+    max-height: 60%;
+
+}
+
