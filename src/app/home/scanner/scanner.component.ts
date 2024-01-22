@@ -14,7 +14,7 @@ export class ScannerComponent {
   
   onScanButtonClick(): void {
       // Navigate to the route where the webcam feature is implemented
-      this.router.navigate(['generator']);
+      this.router.navigate(['web-capture']);
       console.log("clicked")
 }
 }

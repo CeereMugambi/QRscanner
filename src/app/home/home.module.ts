@@ -6,6 +6,7 @@ import { ComponentsModule } from '../components/components.module';
 import { GeneratorComponent } from './generator/generator.component';
 import { QRCodeModule } from 'angularx-qrcode';
 import { ScannerComponent } from './scanner/scanner.component';
+import { WebCaptureComponent } from './web-capture/web-capture.component';
 
 
 
@@ -15,6 +16,7 @@ import { ScannerComponent } from './scanner/scanner.component';
   declarations: [
     GeneratorComponent,
     ScannerComponent,
+    WebCaptureComponent,
   ],
   imports: [
     CommonModule,
