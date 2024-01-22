@@ -12,6 +12,7 @@ import { MaterialModule } from './material/material.module';
 import { ComponentsModule } from './components/components.module';
 import { HomeModule } from './home/home.module';
 import { QRCodeModule } from 'angularx-qrcode';
+import { WebcamModule } from 'ngx-webcam';
 
 
 
@@ -32,7 +33,8 @@ import { QRCodeModule } from 'angularx-qrcode';
     WelcomeRoutingModule,
     ComponentsModule,
     BrowserAnimationsModule,
-    QRCodeModule
+    QRCodeModule,
+    WebcamModule
     
   ],
   providers: [],

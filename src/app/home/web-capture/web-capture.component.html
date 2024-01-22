@@ -1,1 +1,23 @@
-<p>web-capture works!</p>
+<mat-toolbar class="toolbar-header">
+    <mat-icon>camera_enhance</mat-icon>
+    image-capture
+  </mat-toolbar>
+
+  <app-subnavbar></app-subnavbar>
+
+    <div class="camera-container"> 
+        <webcam [height]="400"  
+                [width]="1000"  
+                [trigger]="triggerObservable" 
+                    (imageCapture)="handleImage($event)"> 
+         </webcam> 
+          
+        <button class="actionBtn" (click)="triggerSnapshot();"> 
+            Click Here and take the Shot</button> 
+          
+        <div class="snapshot" *ngIf="webcamImage"> 
+          <h2>Here is your image!</h2> 
+          <img [src]="webcamImage.imageAsDataUrl"/> 
+        </div>
+    </div>
+  
