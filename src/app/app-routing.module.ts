@@ -8,6 +8,7 @@ const routes: Routes = [
   {path:'home',loadChildren:HomeModule,},
   { path: '', redirectTo: 'welcome', pathMatch: 'full' },
   { path: '**', redirectTo: 'Welcome' },
+  { path: 'subnavbar', redirectTo: './', pathMatch: "full" },
 ];
 
 @NgModule({
