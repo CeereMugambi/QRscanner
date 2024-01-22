@@ -1,0 +1,40 @@
+.card {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .header {
+    color: #db3434;
+  }
+
+  .cards-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+.scan-document{
+    width: 200px; 
+    height:200px;
+    margin-top: 10px;
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    margin-left: -170px;
+    transform: translateX(-170px);
+  }
+
+.text{
+    margin: 0;
+}
+
+.scan-icon{
+    max-width: 60%;
+    max-height: 60%;
+
+}
+
