@@ -4,13 +4,15 @@ import { CardComponent } from './card/card.component';
 import { ComponentsRoutingModule } from './components-routing.module';
 import { SubnavbarComponent } from './subnavbar/subnavbar.component';
 import { MaterialModule } from '../material/material.module';
+import { DocumentScannerComponent } from './document-scanner/document-scanner.component';
 
 
 
 @NgModule({
   declarations: [
     CardComponent,
-    SubnavbarComponent
+    SubnavbarComponent,
+    DocumentScannerComponent
   ],
   imports: [
     CommonModule,
