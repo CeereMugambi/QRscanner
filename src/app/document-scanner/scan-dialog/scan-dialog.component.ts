@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { WebcamImage } from 'ngx-webcam';
 import { ImageService } from 'src/app/services';
 
@@ -7,7 +7,7 @@ import { ImageService } from 'src/app/services';
   templateUrl: './scan-dialog.component.html',
   styleUrls: ['./scan-dialog.component.scss']
 })
-export class ScanDialogComponent implements OnInit{
+export class ScanDialogComponent {
   capturedImage: WebcamImage | null = null;
   webcamImage!: WebcamImage; 
 
@@ -15,9 +15,12 @@ export class ScanDialogComponent implements OnInit{
 
   ngOnInit(): void {
     // Subscribe to the ImageService to get the captured image
-    this.imageService.getCapturedImage().subscribe((image: WebcamImage) => {
-      this.capturedImage = image;
-      console.log(this.capturedImage)
+    this.imageService.getCapturedImage().subscribe((image: WebcamImage | null) => {
+      if (image !== null) {
+        this.capturedImage = image;
+        console.log(this.capturedImage);
+      }
     });
+    
   }
 }
