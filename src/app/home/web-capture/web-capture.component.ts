@@ -23,6 +23,7 @@ export class WebCaptureComponent {
   handleImage(webcamImage: WebcamImage): void { 
    console.info('Saved webcam image', webcamImage); 
    this.webcamImage = webcamImage; 
+   
    // Send the captured image to other components via the service
    this.imageService.sendCapturedImage(webcamImage);
    this.router.navigate(['scan-dialog']);

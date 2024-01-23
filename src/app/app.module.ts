@@ -14,6 +14,7 @@ import { HomeModule } from './home/home.module';
 import { QRCodeModule } from 'angularx-qrcode';
 import { WebcamModule } from 'ngx-webcam';
 import { DocumentScannerModule } from './document-scanner/document-scanner.module';
+import { ImageService } from './services';
 
 
 
@@ -39,8 +40,9 @@ import { DocumentScannerModule } from './document-scanner/document-scanner.modul
     DocumentScannerModule
     
   ],
-  providers: [],
+  providers: [ImageService],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
+  
 })
 export class AppModule { }

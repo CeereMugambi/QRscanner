@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { WebcamImage } from 'ngx-webcam';
 import { Subject, Observable } from 'rxjs';
+import { tap } from 'rxjs';
 
 
 @Injectable({
@@ -18,6 +19,8 @@ export class ImageService {
 
   // Observable to subscribe to in other components
   getCapturedImage(): Observable<WebcamImage> {
-    return this.capturedImageSubject.asObservable();
+    return this.capturedImageSubject.asObservable().pipe(
+      tap((image) => console.log('ImageService: Captured image emitted', image))
+    );
 }
 }

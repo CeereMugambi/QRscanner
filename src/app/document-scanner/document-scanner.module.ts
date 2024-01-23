@@ -19,4 +19,4 @@ import { ScanDialogComponent } from './scan-dialog/scan-dialog.component';
     ScannerComponent
   ]
 })
-export class DocumentScannerModule { }
+export class DocumentScannerModule{ }
