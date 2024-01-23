@@ -15,7 +15,7 @@ export class WebCaptureComponent {
   webcamImage!: WebcamImage; 
   private trigger: Subject<void> = new Subject<void>(); 
 
-  constructor(private imageService: ImageService){}
+  constructor(private imageService: ImageService,private router:Router){}
 
   triggerSnapshot(): void { 
    this.trigger.next(); 
@@ -25,7 +25,7 @@ export class WebCaptureComponent {
    this.webcamImage = webcamImage; 
    // Send the captured image to other components via the service
    this.imageService.sendCapturedImage(webcamImage);
-  //  this.router.navigate(['/display-image']);
+   this.router.navigate(['scan-dialog']);
   } 
    
   public get triggerObservable(): Observable<void> { 
