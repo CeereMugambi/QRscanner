@@ -1,4 +1,7 @@
 <div class="snapshot"*ngIf="capturedImage" > 
     <h2>Here is your image!</h2>
+    <div class="resizable-container">
     <img [src]="capturedImage.imageAsDataUrl" alt="Captured Image" />
   </div>
+  <button>Save as PDF</button>
+</div>
