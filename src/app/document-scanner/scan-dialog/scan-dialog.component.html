@@ -1,1 +1,4 @@
-<p>scan-dialog works!</p>
+<div class="snapshot" *ngIf="webcamImage"> 
+    <h2>Here is your image!</h2> 
+    <img [src]="webcamImage.imageAsDataUrl"/> 
+  </div>

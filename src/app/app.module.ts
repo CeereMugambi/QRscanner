@@ -13,6 +13,7 @@ import { ComponentsModule } from './components/components.module';
 import { HomeModule } from './home/home.module';
 import { QRCodeModule } from 'angularx-qrcode';
 import { WebcamModule } from 'ngx-webcam';
+import { DocumentScannerModule } from './document-scanner/document-scanner.module';
 
 
 
@@ -34,7 +35,8 @@ import { WebcamModule } from 'ngx-webcam';
     ComponentsModule,
     BrowserAnimationsModule,
     QRCodeModule,
-    WebcamModule
+    WebcamModule,
+    DocumentScannerModule
     
   ],
   providers: [],

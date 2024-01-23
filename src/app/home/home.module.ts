@@ -8,6 +8,7 @@ import { QRCodeModule } from 'angularx-qrcode';
 import { ScannerComponent } from './scanner/scanner.component';
 import { WebCaptureComponent } from './web-capture/web-capture.component';
 import { WebcamModule } from 'ngx-webcam';
+import { DocumentScannerModule } from '../document-scanner/document-scanner.module';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { WebcamModule } from 'ngx-webcam';
     MaterialModule,
     ComponentsModule,
     QRCodeModule,
-    WebcamModule
+    WebcamModule,
+    DocumentScannerModule
 
   ]
 })

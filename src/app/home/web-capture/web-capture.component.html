@@ -14,10 +14,5 @@
           
         <button class="actionBtn" (click)="triggerSnapshot();"> 
             Click Here and take the Shot</button> 
-          
-        <div class="snapshot" *ngIf="webcamImage"> 
-          <h2>Here is your image!</h2> 
-          <img [src]="webcamImage.imageAsDataUrl"/> 
-        </div>
     </div>
   

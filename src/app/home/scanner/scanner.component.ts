@@ -11,10 +11,4 @@ export class ScannerComponent {
   onFileSelected(event: any) {
     const file = event.target.files[0];
   }
-  
-  onScanButtonClick(): void {
-      // Navigate to the route where the webcam feature is implemented
-      this.router.navigate(['web-capture']);
-      console.log("clicked")
-}
 }
