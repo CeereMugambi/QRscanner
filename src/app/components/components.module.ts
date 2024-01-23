@@ -4,6 +4,7 @@ import { CardComponent } from './card/card.component';
 import { ComponentsRoutingModule } from './components-routing.module';
 import { SubnavbarComponent } from './subnavbar/subnavbar.component';
 import { MaterialModule } from '../material/material.module';
+import { ToolbarComponent } from './toolbar/toolbar.component';
 
 
 
@@ -11,6 +12,7 @@ import { MaterialModule } from '../material/material.module';
   declarations: [
     CardComponent,
     SubnavbarComponent,
+    ToolbarComponent,
   ],
   imports: [
     CommonModule,
@@ -19,7 +21,8 @@ import { MaterialModule } from '../material/material.module';
   ],
   exports:[
     CardComponent,
-    SubnavbarComponent
+    SubnavbarComponent,
+    ToolbarComponent
   ]
 })
 export class ComponentsModule { }
