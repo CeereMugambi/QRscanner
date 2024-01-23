@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { GeneratorComponent } from './generator/generator.component';
 import { ScannerComponent } from './scanner/scanner.component';
 import { WebCaptureComponent } from './web-capture/web-capture.component';
+import { SelectpageComponent } from './selectpage/selectpage.component';
 
 
 
@@ -10,6 +11,7 @@ const routes: Routes = [
     {path: 'generator',component:GeneratorComponent},
     {path: 'scanner',component:ScannerComponent},
     {path: 'web-capture',component:WebCaptureComponent},
+    {path:'select-page',component:SelectpageComponent}
 
 
 

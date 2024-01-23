@@ -9,6 +9,7 @@ import { ScannerComponent } from './scanner/scanner.component';
 import { WebCaptureComponent } from './web-capture/web-capture.component';
 import { WebcamModule } from 'ngx-webcam';
 import { DocumentScannerModule } from '../document-scanner/document-scanner.module';
+import { SelectpageComponent } from './selectpage/selectpage.component';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { DocumentScannerModule } from '../document-scanner/document-scanner.modu
     GeneratorComponent,
     ScannerComponent,
     WebCaptureComponent,
+    SelectpageComponent,
   ],
   imports: [
     CommonModule,
