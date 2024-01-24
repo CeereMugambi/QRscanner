@@ -2,15 +2,14 @@
 <app-subnavbar></app-subnavbar>
 <app-card>
     <app-card-header title="Select User" instruction="Please choose a user: Select either 'Staff' or 'User Customer' by clicking on the respective option to proceed." ></app-card-header>
-    <mat-radio-group >
     <div class="radio-container">
-        <mat-radio-button value="option1">Staff</mat-radio-button>
-        </div>
-    
-    <div class="radio-container">
-      <mat-radio-button value="option1">Customer</mat-radio-button>
+      <label for="userA">
+      <input type="radio" id="userB" name="user" value="Staff" [(ngModel)]="selectedUser">Staff</label>
+      <label for="userB">
+      <input type="radio" id="userB" name="user" value="Customer" [(ngModel)]="selectedUser">Customer</label>
     </div>
-    </mat-radio-group>
     
-    <app-button routerLink="web-capture" title="Proceed"></app-button>
+    <div class="button">
+    <app-button (click)="proceed()"routerLink="web-capture" title="Proceed"></app-button>
+  </div>
 </app-card>

@@ -58,7 +58,8 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     MatTreeModule,
     MatSnackBarModule,
     MatDatepickerModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    MatSnackBarModule
 
     
 
