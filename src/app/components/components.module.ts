@@ -27,7 +27,8 @@ import { ButtonComponent } from './button/button.component';
     CardComponent,
     SubnavbarComponent,
     ToolbarComponent,
-    CardHeaderComponent
+    CardHeaderComponent,
+    ButtonComponent
   ]
 })
 export class ComponentsModule { }
