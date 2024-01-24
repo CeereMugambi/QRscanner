@@ -15,6 +15,7 @@ import { QRCodeModule } from 'angularx-qrcode';
 import { WebcamModule } from 'ngx-webcam';
 import { DocumentScannerModule } from './document-scanner/document-scanner.module';
 import { ImageService } from './services';
+import { QrScannerModule } from './qrScanner/qr-scanner.module';
 
 
 
@@ -37,7 +38,8 @@ import { ImageService } from './services';
     BrowserAnimationsModule,
     QRCodeModule,
     WebcamModule,
-    DocumentScannerModule
+    DocumentScannerModule,
+    QrScannerModule
     
   ],
   providers: [ImageService],

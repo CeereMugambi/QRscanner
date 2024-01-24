@@ -1,0 +1,48 @@
+.toolbar-header{
+    background-color: #0f0f10;
+  }
+  .qrcodeImage {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;   
+  }
+  
+  .cardtitle{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .downloadButton {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  
+  }
+  
+  .left {
+    display: flex;
+    flex: 1;
+    justify-content: left;
+  }
+  
+  .center {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+  }
+  
+  .right {
+    display: flex;
+    flex: 1;
+    justify-content: right;
+  }
+  
+  mat-slider {
+    width: 300px;
+  }
+  
