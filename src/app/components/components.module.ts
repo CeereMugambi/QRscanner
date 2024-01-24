@@ -5,6 +5,7 @@ import { ComponentsRoutingModule } from './components-routing.module';
 import { SubnavbarComponent } from './subnavbar/subnavbar.component';
 import { MaterialModule } from '../material/material.module';
 import { ToolbarComponent } from './toolbar/toolbar.component';
+import { CardHeaderComponent } from './card-header/card-header.component';
 
 
 
@@ -13,6 +14,7 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
     CardComponent,
     SubnavbarComponent,
     ToolbarComponent,
+    CardHeaderComponent,
   ],
   imports: [
     CommonModule,
