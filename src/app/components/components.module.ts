@@ -7,6 +7,7 @@ import { MaterialModule } from '../material/material.module';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { CardHeaderComponent } from './card-header/card-header.component';
 import { ButtonComponent } from './button/button.component';
+import { ScandocsCardComponent } from './scandocs-card/scandocs-card.component';
 
 
 
@@ -17,6 +18,7 @@ import { ButtonComponent } from './button/button.component';
     ToolbarComponent,
     CardHeaderComponent,
     ButtonComponent,
+    ScandocsCardComponent,
   ],
   imports: [
     CommonModule,
@@ -28,7 +30,8 @@ import { ButtonComponent } from './button/button.component';
     SubnavbarComponent,
     ToolbarComponent,
     CardHeaderComponent,
-    ButtonComponent
+    ButtonComponent,
+    ScandocsCardComponent
   ]
 })
 export class ComponentsModule { }
