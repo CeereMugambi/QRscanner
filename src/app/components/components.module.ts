@@ -24,7 +24,8 @@ import { CardHeaderComponent } from './card-header/card-header.component';
   exports:[
     CardComponent,
     SubnavbarComponent,
-    ToolbarComponent
+    ToolbarComponent,
+    CardHeaderComponent
   ]
 })
 export class ComponentsModule { }

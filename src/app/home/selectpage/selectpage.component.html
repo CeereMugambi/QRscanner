@@ -1,10 +1,17 @@
 <app-toolbar icon="document_scanner" title="Document Scanner"></app-toolbar>
 <app-subnavbar></app-subnavbar>
 <app-card>
-    <div class="card">
-        <h1 class="header">Select User</h1>
-        <div class="sub-text">
-          <h4>Please choose a user: Select either 'Staff' or 'User Customer' by clicking on the respective option to proceed "</h4>
+    <app-card-header title="Select User" instruction="Please choose a user: Select either 'Staff' or 'User Customer' by clicking on the respective option to proceed." ></app-card-header>
+    <mat-radio-group >
+    <div class="radio-container">
+        <mat-radio-button value="option1">Staff</mat-radio-button>
         </div>
-      </div>
+    
+    <div class="radio-container">
+      <mat-radio-button value="option1">Customer</mat-radio-button>
+    </div>
+    </mat-radio-group>
+
+    <mat-button routerLink= 'scanner' class="button" mat-button>Proceed
+</mat-button>
 </app-card>

@@ -39,6 +39,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 @NgModule({
   exports: [
     MatButtonModule,
+    MatRadioModule,
     MatIconModule,
     MatCardModule,
     CdkTreeModule,
