@@ -9,7 +9,7 @@ export class ScandocsCardComponent {
   constructor(private router: Router) {}  
   onScanButtonClick(): void {
       // Navigate to the route where the webcam feature is implemented
-      this.router.navigate(['select-page']);
+      this.router.navigate(['web-capture']);
       console.log("clicked")
 }
 }

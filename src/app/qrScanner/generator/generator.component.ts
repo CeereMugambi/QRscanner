@@ -1,5 +1,6 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { DataService } from 'src/app/services/data.service';
+import { QrdataService } from 'src/app/services/qrdata/qrdata.service';
 
 @Component({
   selector: 'app-generator',
@@ -7,6 +8,7 @@ import { DataService } from 'src/app/services/data.service';
   styleUrls: ['./generator.component.scss']
 })
 export class GeneratorComponent implements OnInit {
+  // Output event emitter for scanned QR code parameters
   @Output() qrScanned: EventEmitter<any> = new EventEmitter<any>();
   public params: any;
   public ticketId: string = '';
@@ -28,7 +30,7 @@ export class GeneratorComponent implements OnInit {
     width: 300,
   };
 
-  constructor(private dataService: DataService) { }
+  constructor(private dataService: DataService,private qrdataService:QrdataService) { }
 
   ngOnInit(): void {
     this.params = {
@@ -41,6 +43,10 @@ export class GeneratorComponent implements OnInit {
         this.params = data.params !== undefined ? data.params : data;
         if (this.params) {
           this.initial_state.qrdata = this.serializeParams(this.params);
+
+         // Set the QR code image data in the shared service
+         this.qrdataService.setQRCodeImage(this.initial_state.qrdata);
+
           this.qrScanned.emit(this.params); // Emit event when QR is scanned
         } else {
           console.error('Params is undefined');

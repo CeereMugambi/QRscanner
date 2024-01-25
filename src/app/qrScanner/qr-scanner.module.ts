@@ -6,12 +6,15 @@ import { FormsModule } from '@angular/forms';
 import { MaterialModule } from '../material/material.module';
 import { ComponentsModule } from '../components/components.module';
 import { QRCodeModule } from 'angularx-qrcode';
+import { ScannerComponent } from './scanner/scanner.component';
+import { NgxScannerQrcodeModule } from 'ngx-scanner-qrcode';
 
 
 
 @NgModule({
   declarations: [
-    GeneratorComponent
+    GeneratorComponent,
+    ScannerComponent
   ],
   imports: [
     CommonModule,
@@ -19,7 +22,8 @@ import { QRCodeModule } from 'angularx-qrcode';
     MaterialModule,
     ComponentsModule,
     QRCodeModule,
-    QrScannerRoutingModule
+    QrScannerRoutingModule,
+    NgxScannerQrcodeModule
   ]
 })
 export class QrScannerModule { }

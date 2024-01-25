@@ -14,7 +14,7 @@ export class SelectpageComponent {
 
   proceed() {
     if (this.selectedUser === 'Staff') {
-      this.router.navigate(['/generator']); //change route to qrscanner to be implemented
+      this.router.navigate(['/web-capture']); //change route to qrscanner to be implemented
     } else if (this.selectedUser === 'Customer') {
       this.router.navigate(['/generator']) //route to documentslist of qr
     } else {
